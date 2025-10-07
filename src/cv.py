@@ -7,6 +7,6 @@ cv2.imshow('image',img) #image is the name of the window , img is the img we wil
  #input is the waiting time, if input is zero, means the window will be waiting until a key is entered then it will close
 while 1:
     key = cv2.waitKey(0)
-    if key & 0xFF == ord('q'):
+    if key & 0xFF == ord('q'): #return the ascii code of the input
         cv2.destroyAllWindows()
 
